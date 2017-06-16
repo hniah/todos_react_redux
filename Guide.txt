@@ -1,0 +1,8 @@
+create-react-app todos: create init app
+
+cd todos
+npm run start: start app
+
+npm install --save redux
+npm install --save react-redux
+npm install --save prop-types
