@@ -1,8 +1,13 @@
-let nextTodoId = 0
+let nextTodoId = 100
 export const addTodo = (text) => ({
   type: 'ADD_TODO',
   id: nextTodoId++,
   text
+})
+
+export const deleteTodo = (index) =>({
+	type: 'DELETE_TODO',
+	index
 })
 
 export const setVisibilityFilter = (filter) => ({

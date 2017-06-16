@@ -4,9 +4,6 @@ import App from './App';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import './index.css';
-
-import Footer from './components/Footer';
-
 import reducer from './reducers';
 
 const store = createStore(reducer);

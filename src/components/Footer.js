@@ -2,7 +2,7 @@ import React from 'react'
 import FilterLink from '../containers/FilterLink'
 
 const Footer = () => (
-  <p>
+  <div>
     Show:
     {' '}
     <FilterLink filter="SHOW_ALL">
@@ -16,7 +16,7 @@ const Footer = () => (
     <FilterLink filter="SHOW_COMPLETED">
       Completed
     </FilterLink>
-  </p>
+  </div>
 )
 
 export default Footer

@@ -18,6 +18,8 @@ const todos = (state = default_todos, action) => {
           ? {...todo, completed: !todo.completed}
           : todo
       )
+    case 'DELETE_TODO':
+      return state.filter((e, i) => i !== action.index)
     default:
       return state
   }

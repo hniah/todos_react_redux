@@ -12,9 +12,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React Redux</h2>
         </div>
-        <p>
+        <div>
           <TodoApp />
-        </p>
+        </div>
       </div>
     );
   }
