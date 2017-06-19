@@ -6,3 +6,4 @@ npm run start: start app
 npm install --save redux
 npm install --save react-redux
 npm install --save prop-types
+npm install --save redux-thunk: Redux Thunk middleware allows you to write action creators that return a function instead of an action.

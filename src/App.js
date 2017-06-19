@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TodoApp from './components/TodoApp';
-
+import Reddit from './containers/Reddit';
 
 class App extends Component {
+  handleRefreshClick(e){
+    e.preventDefault()
+    console.log('Testing');
+  }
+
   render() {
     return (
       <div className="App">
@@ -14,6 +19,9 @@ class App extends Component {
         </div>
         <div>
           <TodoApp />
+        </div>
+        <div>
+          <Reddit />
         </div>
       </div>
     );
