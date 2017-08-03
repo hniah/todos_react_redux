@@ -1,19 +1,28 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Picker from './Picker'
 import Posts from './Posts'
 
-class RedditApp extends Component{
-  constructor(props){
-    super(props)
-  }
+class RedditApp extends React.Component{
+  
   componentDidMount(){
     this.props.handleRefreshClick(this.props.selectedReddit)
   }
   componentWillReceiveProps(nextProps) {
+    console.log('componentWillReceiveProps');
     if (nextProps.selectedReddit !== this.props.selectedReddit) {
       this.props.handleRefreshClick(nextProps.selectedReddit)
     }
+  }
+  shouldComponentUpdate(nextProps, nextState){
+    console.log('shouldComponentUpdate');
+    return true;
+  }
+  componentWillUpdate(nextProps){
+    console.log('componentWillUpdate');
+  }
+  componentDidUpdate(prevProps, prevState){
+    console.log('componentDidUpdate');
   }
   render(){
     return (
